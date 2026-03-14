@@ -1,8 +1,8 @@
 import fs from 'fs';
 
-function partOne() {
-  const input = fs.readFileSync('./partOne.txt', 'utf8');
+const input = fs.readFileSync('./input.txt', 'utf8');
 
+function partOne() {
   let squareFeetOfWrappingPaper = 0;
 
   input.split('\n').forEach((dimensions) => {
@@ -26,8 +26,6 @@ function partOne() {
 console.log(partOne());
 
 function partTwo() {
-  const input = fs.readFileSync('./partTwo.txt', 'utf8');
-
   let totalLengthOfRibbon = 0;
 
   input.split('\n').forEach((dimensions) => {

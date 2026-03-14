@@ -3,9 +3,9 @@ import fs from 'fs';
 const UP = '(';
 const DOWN = ')';
 
-function partOne() {
-  const input = fs.readFileSync('./partOne.txt', 'utf8');
+const input = fs.readFileSync('./input.txt', 'utf8');
 
+function partOne() {
   const openParentheses = input.replaceAll(DOWN, '');
   const closedParentheses = input.replaceAll(UP, '');
 
@@ -15,8 +15,6 @@ function partOne() {
 console.log(partOne());
 
 function partTwo() {
-  const input = fs.readFileSync('./partTwo.txt', 'utf8');
-
   const basementLevel = -1;
   let currentLevel = 0;
 
